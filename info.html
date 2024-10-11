@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Информация</title>
+</head>
+
+<body>
+    <a href="index.html">Главная</a>
+    <a href="info.html">Информация</a><br>
+
+    <h1 align="center"><font color="#8B0000"><b>Информация про фильмы Marvel</b></font></h1>
+    <hr width="65%" color="#8B0000" size="2"><br>
+
+    <details>
+        <summary> График</summary>
+        <form>
+            <h2>Значение по оси OX</h2>
+            <input type="radio" name="Ox" value="year"> Год<br>
+            <input type="radio" name="Ox" value="director"> Режиссер<br>
+            <input type="radio" name="Ox" value="genre"> Жанр<br>
+
+            <h2>Результат</h2>
+            <input type="checkbox" name="result" value="max_budget"> Максимальный бюджет<br>
+            <input type="checkbox" name="result" value="min_budget"> Минимальный бюджет<br>
+            <input type="checkbox" name="result" value="quantity"> Количество фильмов<br>
+            
+            <input type="button" value="Построить">
+        </form>
+        <p>Тут будет график</p>
+    </details>
+
+    <details>
+        <summary> Фильтр</summary>
+        <form>
+            <label><b>Наименование фильма: </b></label>
+            <input type="text" name="name" id="name"><br><br>
+
+            <label><b>Год производства: </b>от </label>
+            <input type="number" name="year" id="year1">
+            <label> до </label>
+            <input type="number" name="year" id="year2"><br><br>
+
+            <label><b>Жанр: </b></label>
+            <input type="text" name="genre" id="genre"><br><br>
+
+            <label><b>Режиссер: </b></label>
+            <input type="text" name="director" id="director"><br><br>
+
+            <label><b>Возраст: </b></label>
+            <input type="text" name="old" id="old"><br><br>
+
+            <label><b>Бюджет, $: </b>от </label>
+            <input type="number" name="budget" id="budget1">
+            <label> до </label>
+            <input type="number" name="budget" id="budget2"><br><br>
+
+            <label><b>Длительность, мин: </b>от </label>
+            <input type="number" name="duration" id="duration1">
+            <label> до </label>
+            <input type="number" name="duration" id="duration2"><br><br>
+
+            <input type="button" value="Найти">
+        </form>
+    </details>
+
+    <details>
+        <summary> Сортировка</summary>
+        <form>
+            <label><b>Первый уровень: </b></label>
+            <select name="first_level">
+                <option value="0">Не выбрано</option>
+                <option value="1">Наименование фильма</option>
+                <option value="2">Год производства</option>
+                <option value="3">Жанр</option>
+                <option value="4">Режиссер</option>
+                <option value="5">Возраст</option>
+                <option value="6">Бюджет, $</option>
+                <option value="7">Длительность, мин</option>
+            </select>
+            <input type="checkbox" name="down1" value="down1"> по убыванию?<br>
+
+            <label><b>Второй уровень: </b></label>
+            <select name="second_level">
+                <option value="0">Не выбрано</option>
+                <option value="1">Наименование фильма</option>
+                <option value="2">Год производства</option>
+                <option value="3">Жанр</option>
+                <option value="4">Режиссер</option>
+                <option value="5">Возраст</option>
+                <option value="6">Бюджет, $</option>
+                <option value="7">Длительность, мин</option>
+            </select>
+            <input type="checkbox" name="down2" value="down2"> по убыванию?<br>
+
+            <label><b>Третий уровень: </b></label>
+            <select name="third_level">
+                <option value="0">Не выбрано</option>
+                <option value="1">Наименование фильма</option>
+                <option value="2">Год производства</option>
+                <option value="3">Жанр</option>
+                <option value="4">Режиссер</option>
+                <option value="5">Возраст</option>
+                <option value="6">Бюджет, $</option>
+                <option value="7">Длительность, мин</option>
+            </select>
+            <input type="checkbox" name="down3" value="down3"> по убыванию?<br>
+            <input type="button" value="Сортировать">
+        </form>
+    </details>
+    <br><br>
+
+    <table border="1" cellspacing="0" cellpadding="8" align="center">
+        <thead>
+            <tr>
+                <th>№</th>
+                <th>Наименование фильма</th>
+                <th>Год производства</th>
+                <th>Жанр</th>
+                <th>Режиссер</th>
+                <th>Возраст</th>
+                <th>Бюджет, $</th>
+                <th>Длительность, мин</th>
+            </tr>
+        </thead>
+        <tbody align="center">
+            <tr>
+                <td>1</td>
+                <td>Железный человек</td>
+                <td>2008</td>
+                <td>Приключения</td>
+                <td>Джон Фавро</td>
+                <td>12+</td>
+                <td>140 000 000</td>
+                <td>126</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Невероятный Халк</td>
+                <td>2008</td>
+                <td>Драма</td>
+                <td>Луи Летерье</td>
+                <td>12+</td>
+                <td>150 000 000</td>
+                <td>112</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Железный человек 2</td>
+                <td>2010</td>
+                <td>Фантастика</td>
+                <td>Джон Фавро</td>
+                <td>12+</td>
+                <td>200 000 000</td>
+                <td>124</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Тор</td>
+                <td>2011</td>
+                <td>Боевик</td>
+                <td>Кеннет Брана</td>
+                <td>12+</td>
+                <td>150 000 000</td>
+                <td>115</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Первый мститель</td>
+                <td>2011</td>
+                <td>Боевик</td>
+                <td>Джо Джонстон</td>
+                <td>12+</td>
+                <td>140 000 000</td>
+                <td>124</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Мстители</td>
+                <td>2012</td>
+                <td>Боевик</td>
+                <td>Джосс Уидон</td>
+                <td>12+</td>
+                <td>220 000 000</td>
+                <td>143</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>Железный человек 3</td>
+                <td>2013</td>
+                <td>Фантастика</td>
+                <td>Шейн Блэк</td>
+                <td>12+</td>
+                <td>200 000 000</td>
+                <td>130</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>Тор 2: Царство тьмы</td>
+                <td>2013</td>
+                <td>Приключения</td>
+                <td>Алан Тейлор</td>
+                <td>12+</td>
+                <td>170 000 000</td>
+                <td>112</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>Первый мститель: Другая война</td>
+                <td>2014</td>
+                <td>Триллер</td>
+                <td>Джо Руссо</td>
+                <td>12+</td>
+                <td>170 000 000</td>
+                <td>136</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>Стражи Галактики</td>
+                <td>2014</td>
+                <td>Фантастика</td>
+                <td>Джеймс Ганн</td>
+                <td>12+</td>
+                <td>170 000 000</td>
+                <td>121</td>
+            </tr>
+            <tr>
+                <td>11</td>
+                <td>Мстители: Эра Альтрона</td>
+                <td>2015</td>
+                <td>Приключения</td>
+                <td>Джосс Уидон</td>
+                <td>12+</td>
+                <td>250 000 000</td>
+                <td>141</td>
+            </tr>
+            <tr>
+                <td>12</td>
+                <td>Человек-муравей</td>
+                <td>2015</td>
+                <td>Боевик</td>
+                <td>Пейтон Рид</td>
+                <td>12+</td>
+                <td>130 000 000</td>
+                <td>117</td>
+            </tr>
+            <tr>
+                <td>13</td>
+                <td>Первый мститель: Противостояние</td>
+                <td>2016</td>
+                <td>Триллер</td>
+                <td>Джо Руссо</td>
+                <td>12+</td>
+                <td>250 000 000</td>
+                <td>147</td>
+            </tr>
+            <tr>
+                <td>14</td>
+                <td>Доктор Стрэндж</td>
+                <td>2016</td>
+                <td>Фэнтези</td>
+                <td>Скотт Дерриксон</td>
+                <td>12+</td>
+                <td>165 000 000</td>
+                <td>115</td>
+            </tr>
+            <tr>
+                <td>15</td>
+                <td>Стражи Галактики. Часть 2</td>
+                <td>2017</td>
+                <td>Фантастика</td>
+                <td>Джеймс Ганн</td>
+                <td>12+</td>
+                <td>200 000 000</td>
+                <td>136</td>
+            </tr>
+            <tr>
+                <td>16</td>
+                <td>Человек-паук: Возвращение домой</td>
+                <td>2017</td>
+                <td>Боевик</td>
+                <td>Джон Уоттс</td>
+                <td>12+</td>
+                <td>175 000 000</td>
+                <td>133</td>
+            </tr>
+            <tr>
+                <td>17</td>
+                <td>Тор: Рагнарёк</td>
+                <td>2017</td>
+                <td>Комедия</td>
+                <td>Тайка Вайтити</td>
+                <td>12+</td>
+                <td>180 000 000</td>
+                <td>130</td>
+            </tr>
+            <tr>
+                <td>18</td>
+                <td>Чёрная пантера</td>
+                <td>2018</td>
+                <td>Драма</td>
+                <td>Райан Куглер</td>
+                <td>12+</td>
+                <td>200 000 000</td>
+                <td>134</td>
+            </tr>
+            <tr>
+                <td>19</td>
+                <td>Мстители: Война бесконечности</td>
+                <td>2018</td>
+                <td>Фантастика</td>
+                <td>Джо Руссо</td>
+                <td>12+</td>
+                <td>316 000 000</td>
+                <td>149</td>
+            </tr>
+            <tr>
+                <td>20</td>
+                <td>Человек-муравей и Оса</td>
+                <td>2018</td>
+                <td>Приключения</td>
+                <td>Пейтон Рид</td>
+                <td>12+</td>
+                <td>195 000 000</td>
+                <td>118</td>
+            </tr>
+            <tr>
+                <td>21</td>
+                <td>Капитан Марвел</td>
+                <td>2019</td>
+                <td>Боевик</td>
+                <td>Райан Флек</td>
+                <td>12+</td>
+                <td>152 000 000</td>
+                <td>123</td>
+            </tr>
+            <tr>
+                <td>22</td>
+                <td>Мстители: Финал</td>
+                <td>2019</td>
+                <td>Боевик</td>
+                <td>Энтони Руссо</td>
+                <td>12+</td>
+                <td>356 000 000</td>
+                <td>181</td>
+            </tr>
+            <tr>
+                <td>23</td>
+                <td>Человек-паук: Вдали от дома</td>
+                <td>2019</td>
+                <td>Приключения</td>
+                <td>Джон Уоттс</td>
+                <td>12+</td>
+                <td>160 000 000</td>
+                <td>129</td>
+            </tr>
+            <tr>
+                <td>24</td>
+                <td>Чёрная Вдова</td>
+                <td>2021</td>
+                <td>Фантастика</td>
+                <td>Кейт Шортланд</td>
+                <td>12+</td>
+                <td>200 000 000</td>
+                <td>134</td>
+            </tr>
+            <tr>
+                <td>25</td>
+                <td>Шан-Чи и легенда десяти колец</td>
+                <td>2021</td>
+                <td>Приключения</td>
+                <td>Дестин Дэниел Креттон</td>
+                <td>12+</td>
+                <td>150 000 000</td>
+                <td>132</td>
+            </tr>
+            <tr>
+                <td>26</td>
+                <td>Вечные</td>
+                <td>2021</td>
+                <td>Драма</td>
+                <td>Хлоя Чжао</td>
+                <td>12+</td>
+                <td>200 000 000</td>
+                <td>156</td>
+            </tr>
+            <tr>
+                <td>27</td>
+                <td>Человек-паук: Нет пути домой</td>
+                <td>2021</td>
+                <td>Приключения</td>
+                <td>Джон Уоттс</td>
+                <td>12+</td>
+                <td>200 000 000</td>
+                <td>148</td>
+            </tr>
+            <tr>
+                <td>28</td>
+                <td>Доктор Стрэндж: В мультивселенной безумия</td>
+                <td>2022</td>
+                <td>Ужасы</td>
+                <td>Сэм Рэйми</td>
+                <td>12+</td>
+                <td>200 000 000</td>
+                <td>126</td>
+            </tr>
+            <tr>
+                <td>29</td>
+                <td>Тор: Любовь и гром</td>
+                <td>2022</td>
+                <td>Комедия</td>
+                <td>Тайка Вайтити</td>
+                <td>12+</td>
+                <td>250 000 000</td>
+                <td>119</td>
+            </tr>
+            <tr>
+                <td>30</td>
+                <td>Чёрная пантера: Ваканда навеки</td>
+                <td>2022</td>
+                <td>Драма</td>
+                <td>Райан Куглер</td>
+                <td>12+</td>
+                <td>250 000 000</td>
+                <td>161</td>
+            </tr>
+            <tr>
+                <td>31</td>
+                <td>Человек-муравей и Оса: Квантомания</td>
+                <td>2023</td>
+                <td>Приключения</td>
+                <td>Пейтон Рид</td>
+                <td>12+</td>
+                <td>200 000 000</td>
+                <td>124</td>
+            </tr>
+            <tr>
+                <td>32</td>
+                <td>Стражи Галактики. Часть 3</td>
+                <td>2023</td>
+                <td>Фантастика</td>
+                <td>Джеймс Ганн</td>
+                <td>12+</td>
+                <td>250 000 000</td>
+                <td>150</td>
+            </tr>
+            <tr>
+                <td>33</td>
+                <td>Марвелы</td>
+                <td>2023</td>
+                <td>Боевик</td>
+                <td>Ниа ДаКоста</td>
+                <td>12+</td>
+                <td>220 000 000</td>
+                <td>105</td>
+            </tr>
+            <tr>
+                <td>34</td>
+                <td>Люди Икс: Тёмный Феникс</td>
+                <td>2019</td>
+                <td>Боевик</td>
+                <td>Саймон Кинберг</td>
+                <td>16+</td>
+                <td>200 000 000</td>
+                <td>114</td>
+            </tr>
+            <tr>
+                <td>35</td>
+                <td>Веном</td>
+                <td>2018</td>
+                <td>Триллер</td>
+                <td>Рубен Фляйшер</td>
+                <td>16+</td>
+                <td>100 000 000</td>
+                <td>112</td>
+            </tr>
+            <tr>
+                <td>36</td>
+                <td>Дэдпул</td>
+                <td>2016</td>
+                <td>Комедия</td>
+                <td>Тим Миллер</td>
+                <td>18+</td>
+                <td>58 000 000</td>
+                <td>108</td>
+            </tr>
+            <tr>
+                <td>37</td>
+                <td>Дэдпул 2</td>
+                <td>2018</td>
+                <td>Комедия</td>
+                <td>Дэвид Литч</td>
+                <td>18+</td>
+                <td>110 000 000</td>
+                <td>119</td>
+            </tr>
+            <tr>
+                <td>38</td>
+                <td>Люди Икс: Апокалипсис</td>
+                <td>2016</td>
+                <td>Приключения</td>
+                <td>Брайан Сингер</td>
+                <td>16+</td>
+                <td>178 000 000</td>
+                <td>144</td>
+            </tr>
+            <tr>
+                <td>39</td>
+                <td>Люди Икс: Дни минувшего будущего</td>
+                <td>2014</td>
+                <td>Фантастика</td>
+                <td>Брайан Сингер</td>
+                <td>12+</td>
+                <td>200 000 000</td>
+                <td>132</td>
+            </tr>
+            <tr>
+                <td>40</td>
+                <td>Удивительный Человек-паук</td>
+                <td>2012</td>
+                <td>Приключения</td>
+                <td>Марк Уэбб</td>
+                <td>12+</td>
+                <td>230 000 000</td>
+                <td>136</td>
+            </tr>
+            <tr>
+                <td>41</td>
+                <td>Человек-паук</td>
+                <td>2002</td>
+                <td>Боевик</td>
+                <td>Сэм Рэйми</td>
+                <td>12+</td>
+                <td>139 000 000</td>
+                <td>121</td>
+            </tr>
+            <tr>
+                <td>42</td>
+                <td>Человек-паук 2</td>
+                <td>2004</td>
+                <td>Боевик</td>
+                <td>Сэм Рэйми</td>
+                <td>12+</td>
+                <td>200 000 000</td>
+                <td>127</td>
+            </tr>
+            <tr>
+                <td>43</td>
+                <td>Человек-паук 3</td>
+                <td>2007</td>
+                <td>Боевик</td>
+                <td>Сэм Рэйми</td>
+                <td>12+</td>
+                <td>258 000 000</td>
+                <td>139</td>
+            </tr>
+            <tr>
+                <td>44</td>
+                <td>Веном 2</td>
+                <td>2021</td>
+                <td>Триллер</td>
+                <td>Энди Серкис</td>
+                <td>16+</td>
+                <td>110 000 000</td>
+                <td>97</td>
+            </tr>
+            <tr>
+                <td>45</td>
+                <td>Люди Икс</td>
+                <td>2000</td>
+                <td>Боевик</td>
+                <td>Брайан Сингер</td>
+                <td>12+</td>
+                <td>75 000 000</td>
+                <td>104</td>
+            </tr>
+            <tr>
+                <td>46</td>
+                <td>Люди Икс 2</td>
+                <td>2003</td>
+                <td>Фантастика</td>
+                <td>Брайан Сингер</td>
+                <td>12+</td>
+                <td>110 000 000</td>
+                <td>133</td>
+            </tr>
+            <tr>
+                <td>47</td>
+                <td>Люди Икс: Последняя битва</td>
+                <td>2006</td>
+                <td>Боевик</td>
+                <td>Бретт Рэтнер</td>
+                <td>12+</td>
+                <td>210 000 000</td>
+                <td>104</td>
+            </tr>
+            <tr>
+                <td>48</td>
+                <td>Люди Икс: Первый класс</td>
+                <td>2011</td>
+                <td>Боевик</td>
+                <td>Мэттью Вон</td>
+                <td>12+</td>
+                <td>160 000 000</td>
+                <td>131</td>
+            </tr>
+            <tr>
+                <td>49</td>
+                <td>Росомаха: Бессмертный</td>
+                <td>2013</td>
+                <td>Приключения</td>
+                <td>Джеймс Мэнголд</td>
+                <td>12+</td>
+                <td>120 000 000</td>
+                <td>126</td>
+            </tr>
+            <tr>
+                <td>50</td>
+                <td>Капитан Марвел 2 (Марвелы)</td>
+                <td>2023</td>
+                <td>Приключения</td>
+                <td>Ниа ДаКоста</td>
+                <td>12+</td>
+                <td>220 000 000</td>
+                <td>105</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
