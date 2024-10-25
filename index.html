@@ -3,44 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles.css">
     <title>Marvel Movies</title>
 </head>
-
 <body>
-    <a href="index.html">Главная</a>
-    <a href="info.html">Информация</a><br>
-
-    <img src="images/film1.jpg" alt="film image" width="220">
-    <img src="images/film2.jpg" alt="film image" width="220">
-    <img src="images/film3.jpg" alt="film image" width="220">
-    <img src="images/film4.jpg" alt="film image" width="220">
-    <img src="images/film5.jpg" alt="film image" width="220">
-    <a href="ant-man.html"><img src="images/film6.jpg" alt="film image" width="220"></a>
-
-    <hr width="65%" color="#8B0000" size="2">
-
-    <h2>Железный человек (2008)</h2>
-    <p>
-        <img src="images/film7.jpg" alt="film image" width="220" align="middle">
+    <!--главный блок с контентом-->
+    <div class="main">
+        <!--шапка сайта-->
+        <div class="header up-block">
+            <h1>marvel</h1>
+        </div>
         
-        Миллиардер-изобретатель Тони Старк попадает в плен к Афганским террористам, 
-        которые пытаются заставить его создать оружие массового поражения. В тайне от своих 
-        захватчиков Старк конструирует высокотехнологичную киберброню, которая помогает ему сбежать. 
-        Однако по возвращении в США он узнаёт, что в совете директоров его фирмы плетётся заговор, 
-        чреватый страшными последствиями. Используя своё последнее изобретение, Старк пытается решить 
-        проблемы своей компании радикально...
-    </p>
-    <hr width="65%" color="#8B0000" size="2">
+        <div class="header down-block">
+            <div class="menu">
+                <a href="#">Главная</a>
+                <a href="#">Информация</a>
+                <a href="#">История кинокомпании</a>
+                <a href="#">Новинки</a>
+            </div>
+        </div>
 
-    <h2>Человек-муравей (2015)</h2>
-    <p>
-        <img src="images/film6.jpg" alt="film image" width="220" align="middle">
+        <!--галерея-->
+        <div class="banner-img"><img src="images/8.jpg" alt="картинка фильма"></div>
+        <div class="images">
+            <img src="images/film1.jpg" alt="картинка фильма"><img src="images/film2.jpg" alt="картинка фильма"><img src="images/film3.jpg" alt="картинка фильма">
+        </div>
         
-        Вооружившись удивительной способностью уменьшаться в размере, но обладать при этом большой силой, 
-        мошенник Скотт Лэнг должен стать героем и помочь своему наставнику доктору Хэнку Пиму сохранить в 
-        тайне существование костюма Человека-муравья от угроз нового поколения.
-    </p>
-    <hr width="65%" color="#8B0000" size="2">
+        <!--основная часть-->
+        <div class="content">
 
+            <!--левый блок-->
+            <div class="left block">
+                <div class="left-block-img"><img src="images/film7.jpg" alt="картинка фильма"></div>
+                <h3>Железный человек (2008)</h3>
+                <p>Миллиардер-изобретатель Тони Старк попадает в плен к Афганским террористам, которые пытаются заставить 
+                    его создать оружие массового поражения. В тайне от своих захватчиков Старк конструирует высокотехнологичную 
+                    киберброню, которая помогает ему сбежать. Однако по возвращении в США он узнаёт, что в совете директоров его 
+                    фирмы плетётся заговор, чреватый страшными последствиями. Используя своё последнее изобретение, Старк пытается 
+                    решить проблемы своей компании радикально...
+                </p>
+            </div>
+            
+
+            <!--правый блок-->
+            <div class="right">
+
+                <div class="item">
+                    <div class="text">
+                        <h3>Мстители: Война бесконечности (2018)</h3>
+                        <hr>
+                        <p>Пока Мстители и их союзники продолжают защищать мир от различных опасностей, 
+                            с которыми не смог бы справиться один супергерой, новая угроза возникает из космоса: Танос.
+                        </p>
+                    </div>
+                    <div class="film"><img src="images/film5.jpg" alt="картинка фильма"></div>
+                </div>
+
+                <div class="item">
+                    <div class="text">
+                        <h3>Человек-муравей (2015)</h3>
+                        <hr>
+                        <p>Вооружившись удивительной способностью уменьшаться в размере, но обладать при этом 
+                            большой силой, мошенник Скотт Лэнг должен стать героем и помочь своему наставнику доктору 
+                            Хэнку Пиму сохранить в тайне существование костюма Человека-муравья от угроз нового поколения.
+                        </p>
+                    </div>
+                    <div class="film"><img src="images/film6.jpg" alt="картинка фильма"></div>
+                </div>
+
+                <div class="item">
+                    <div class="text">
+                        <h3>Чёрная Вдова (2021)</h3>
+                        <hr>
+                        <p>Наташе Романофф предстоит лицом к лицу встретиться со своим прошлым. Чёрной Вдове 
+                            придется вспомнить о том, что было в её жизни задолго до присоединения к команде Мстителей, 
+                            и узнать об опасном заговоре, в который оказываются втянуты её старые знакомые.
+                        </p>
+                    </div>
+                    <div class="film"><img src="images/film4.jpg" alt="картинка фильма"></div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <!--подвал сайта-->
+    <div class="header">
+        <div class="bottom">
+            <p class="name">Медушевская Вероника, Б9122-09.03.04 (5), 2024-2025</p>
+            <p class="email">medushevskaya.vv@dvfu.ru</p>
+        </div>
+    </div>
 </body>
 </html>
